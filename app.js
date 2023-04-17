@@ -17,7 +17,7 @@ function addGif(res) {
         })
         //  Add gif to holding area
         $addCol.append($addGif);
-        $gifHolder.apppend($addCol);
+        $gifHolder.append($addCol);
     }
 }
 
@@ -33,14 +33,14 @@ $("form").on("submit", async function(e) {
     const response = await axios.get("http://api.giphy.com/v1/gifs/search", {
         params: {
             q: searchTerm,
-            api_key: "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym"
+            api_key: "gNHMMHm5tLbU46LOnzUHrfZzeRD4ywCW"
         }
     });
     addGif(response.data);
 });
 
-// Remove the gif
+// Clear the gif holder
 
-$("remove").on("click",function() {
+$("#delete").on("click",function() {
     $gifHolder.empty();
 });
