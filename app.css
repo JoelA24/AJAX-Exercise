@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background: radial-gradient(circle at center, blue, red )
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+}
+
+div{
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
